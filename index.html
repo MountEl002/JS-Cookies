@@ -10,17 +10,19 @@
     <div id="app">
       <h1>Welcome to User's Personalized Web Application</h1>
       <div id="greeting"></div>
-      <form id="preferences-form">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" required />
-        <label for="theme">Preferred Theme:</label>
-        <select name="theme" id="theme" required>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-        <button type="submit">Save preferences</button>
-      </form>
-      <button id="clear-cookies">Clear Cookies</button>
+      <div class="form-contaier">
+        <form id="preferences-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" required autofocus />
+          <label for="theme">Preferred Theme:</label>
+          <select name="theme" id="theme" required>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+          <button type="submit">Save preferences</button>
+        </form>
+        <button id="clear-cookies">Clear Cookies</button>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
