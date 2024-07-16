@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="site-overlay" class="site-overlay"></div>
     <div id="app">
       <h1>Welcome to User's Personalized Web Application</h1>
-      <div id="greeting"></div>
+      <h2 id="greeting"></h2>
       <div class="form-contaier">
         <form id="preferences-form">
           <label for="name">Your Name:</label>
@@ -23,6 +24,14 @@
         </form>
         <button id="clear-cookies">Clear Cookies</button>
       </div>
+    </div>
+    <div id="cookie-consent" class="cookie-consent">
+      <p>
+        This website uses coookies to enhance your experience. Do you accept the
+        use of cookies?
+      </p>
+      <button id="accept-cookies">Accept</button>
+      <button id="decline-cookies">Decline</button>
     </div>
     <script src="app.js"></script>
   </body>
